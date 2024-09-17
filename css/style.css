@@ -1,0 +1,159 @@
+/* background colour #090E45 ; header colour #0D145E ; light accent colour 8AA3C5 */
+* {
+	box-sizing: border-box;
+}
+
+html {
+  overflow: auto;
+}
+
+/* layout styling for about, index and contact */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  margin-top: 0;
+}
+
+main {
+  margin-top: 20px;
+}
+
+/* Style the header which contains the navigation links */
+header {
+    background-color: #0D145E;
+    overflow: hidden;
+    
+  }
+  
+  /* Hide the checkbox which we use for the hamburger menu functionality */
+  #hamburger_checkbox {
+    display: none;
+  }
+  
+  /* Style the image we use as a label for the hamburger menu checkbox */
+  #hamburger_image {
+    background-color: #8AA3C5;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 10%;
+  }
+  
+  /* Show or hide the navigation links depending on whether the hamburger menu checkbox is checked or not */
+  input[id="hamburger_checkbox"]:not(:checked) + nav {
+    display: none;
+  }
+  
+  /* Style the heading */
+  h1 {
+    color: #8AA3C5;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  /* Style the links inside the navigation bar */
+  nav a {
+    color: #8AA3C5;							
+    float: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  
+  /* Change the color of links on hover using mouse */
+  nav a:hover {
+    background-color: #8AA3C5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #021d3f;
+  }
+  
+  /* Change the color of links on focus using tab key */
+  nav a:focus {
+    background-color: white;
+    color: #021d3f;
+    outline: none;
+  }
+  
+  /* Change the color of the active/current link */
+  .active_nav {
+    background-color: #8AA3C5;
+    color: #021d3f;
+  }
+
+  footer {
+    background-color: #0D145E;
+    text-align: center;
+    color:#8AA3C5;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+ /* styling footer content */
+  footer > p {
+    font-size:small;
+    font-weight: bold;
+    font-family: Trebuchet MS, sans-serif;
+    margin: 3px;
+  }
+
+ /* styling footer links */
+  footer > a {
+    font-size: x-small;
+    font-family: Trebuchet MS, sans-serif;
+    color:#8AA3C5;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+ /* styling color of link when hover */
+  footer a:hover {
+    color: lightblue;
+  }
+
+   /* For desktop: */
+  @media only screen and (min-width: 768px) {
+  
+        /* Hide the hamburger menu image we use as a label for the hamburger menu checkbox */
+        #hamburger_image {
+          display: none;
+        }
+  
+        /* Show the navigation links... even if the hamburger menu checkbox is not selected (menu open) */
+        input[id="hamburger_checkbox"]:not(:checked) + nav {
+          display:block
+        }
+  
+        /* Style the jellyfish heading */
+        h1 {
+          text-align: left;
+          float: left;
+          width: 390px;
+        }
+  
+        /* Style the navigation bar */
+        nav {
+          float: right;
+        }
+  
+        /* Style the links inside the navigation bar */
+        nav a {
+          width: auto;
+          padding: 30px 20px;
+        }
+  }
+  
+  

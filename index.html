@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A site about jellyfish." > 
+	<title>Ethereal Jellyfish | Home </title> 
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index.css" >
+</head>
+
+<body class="container">
+	<header>
+		<h1>ethereal jellyfish</h1> 
+        <label for="hamburger_checkbox">
+            <img id="hamburger_image" src="images/hamburger-menu.svg" alt="Expand and collapse menu.">
+        </label>
+        <input id="hamburger_checkbox" type="checkbox">
+		<nav>
+			<a class="active_nav" href="index.html">home</a>
+			<a href="photos.html">photos</a>
+			<a href="about.html">about</a>
+			<a href="contact.html">contact</a>
+		</nav>
+	</header>
+	<main>
+		<aside> 
+			<a href="https://www.barrierreef.org/the-reef/animals/jellyfish"target="_blank">jellyfish facts</a>	
+			<a href="https://en.wikipedia.org/wiki/Jellyfish"target="_blank">jellyfish wiki</a>
+			<a href="https://www.citrusreef.com/blogs/news/types-of-jellyfish?srsltid=AfmBOoortqpNU097IL_7iMuBG0askwNX90_uBu8DoQofa1cHXESV5nUV"target="_blank">17 types of jellyfish</a>
+			<a href="https://australian.museum/learn/animals/jellyfish/"target="_blank">australian jellyfish identification</a>
+		</aside>
+		<section>
+			<img id="main_image"                        
+				 srcset="images/480w/moon-jelly-480.jpg 480w,
+				 		 images/960w/moon-jelly-export-1.jpg 960w,
+						 images/1920w/moon-jelly-1920.jpg 1920w"
+				 sizes="(max-width: 480px) 100vw, 
+						(max-width: 600px) 50vw,
+						(min-width: 481px) and (max-width: 960px) 100vw, 
+						(min-width: 961px) 100vw"
+				 src="images/original/moon-jelly-by-yosemite.JPG"
+				 alt="Moon Jellyfish">
+		</section>
+	</main>
+	<footer>
+		<p>redesigned by leilani temple-daggar</p>
+		<a href="https://commons.wikimedia.org/wiki/File:Aurelia_aurita_001.JPG" target="_blank">moon jellyfish by yosemite</a>
+	</footer>
+</body>
+</html>
+
