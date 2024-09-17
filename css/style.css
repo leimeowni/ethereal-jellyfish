@@ -4,7 +4,8 @@
 }
 
 html {
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* layout styling for about, index and contact */
